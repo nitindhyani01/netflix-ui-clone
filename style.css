@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("./backgroundimghero.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+}
+.main .box {
+  height: 90vh;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  justify-content: space-between;
+  height: 62px;
+}
+nav img {
+  color: red;
+  width: 114px;
+  position: relative;
+  z-index: 10;
+}
+@media (max-width: 960px) {
+  nav img {
+    width: 141px;
+  }
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+.hero > :nth-child(1) {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.line {
+  background-color: rgb(43, 43, 43);
+  height: 7px;
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: bold;
+  background-color: white;
+}
+.btn-red-sn {
+  background-color: red;
+  color: white;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
+}
+.main .main-btn-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.main input {
+  padding: 3px 24px;
+  font-size: 24px;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 4px;
+}
+.main input::placeholder {
+  font-size: medium;
+}
