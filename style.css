@@ -12,11 +12,11 @@ body {
   background-position: center center;
   background-size: max(1200px, 100vw);
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 644px;
   position: relative;
 }
 .main .box {
-  height: 90vh;
+  height: 644px;
   width: 100%;
   opacity: 0.7;
   position: absolute;
@@ -26,29 +26,46 @@ body {
 nav {
   display: flex;
   align-items: center;
-  max-width: 70vw;
+  max-width: 75vw;
   margin: auto;
   justify-content: space-between;
-  height: 62px;
+  height: 75px;
+  padding-top: 0.1rem;
 }
 nav img {
   color: red;
-  width: 114px;
+  width: 145px;
   position: relative;
   z-index: 10;
 }
-@media (max-width: 960px) {
-  nav img {
-    width: 141px;
-  }
-}
-nav button {
+.navbtn {
   position: relative;
   z-index: 10;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.btn-red-sn {
+  background-color: red;
+  padding: 8px;
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+  border: none;
+}
+.btn,
+#select-lang {
+  background-color: transparent;
+  color: #e5e5e5;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+#select-lang {
+  border: none;
 }
 .hero {
   font-family: "Martel Sans", sans-serif;
-  height: calc(100% - 62px);
+  height: calc(100% - 75px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,15 +94,6 @@ nav button {
   background-color: rgb(43, 43, 43);
   height: 7px;
 }
-.btn {
-  padding: 3px 8px;
-  font-weight: bold;
-  background-color: white;
-}
-.btn-red-sn {
-  background-color: red;
-  color: white;
-}
 .btn-red {
   background-color: red;
   color: white;
@@ -106,7 +114,28 @@ nav button {
   border: 1px solid white;
   background: transparent;
   border-radius: 4px;
+  color: #e5e5e5;
 }
 .main input::placeholder {
   font-size: medium;
+}
+@media (max-width: 960px) {
+  nav img {
+    width: 100px;
+  }
+  .navbtn {
+    height: 30%;
+  }
+  .btn-red-sn {
+    padding: 2px;
+  }
+  .nav {
+    height: 50px;
+    padding: 0;
+  }
+  .hero {
+    height: calc(100% - 50px);
+    gap: 18px;
+    padding: 0 30px;
+  }
 }
