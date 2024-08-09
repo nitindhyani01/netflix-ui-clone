@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   height: 644px;
   position: relative;
+  overflow: hidden;
 }
 .main .box {
   height: 644px;
@@ -22,6 +23,8 @@ body {
   position: absolute;
   top: 0;
   background-color: black;
+  overflow: hidden;
+
 }
 nav {
   display: flex;
@@ -73,7 +76,6 @@ nav img {
   color: white;
   position: relative;
   gap: 23px;
-  padding: 0 30px;
 }
 .hero > :nth-child(1) {
   font-weight: 900;
@@ -90,18 +92,6 @@ nav img {
   font-size: 20px;
   text-align: center;
 }
-.line {
-  background-color: rgb(43, 43, 43);
-  height: 7px;
-}
-.btn-red {
-  background-color: red;
-  color: white;
-  padding: 3px 24px;
-  font-size: 24px;
-  border-radius: 4px;
-  border: none;
-}
 .main .main-btn-mail {
   display: flex;
   align-items: center;
@@ -116,8 +106,20 @@ nav img {
   border-radius: 4px;
   color: #e5e5e5;
 }
+.start-btn {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
+}
 .main input::placeholder {
   font-size: medium;
+}
+.line {
+  background-color: rgb(43, 43, 43);
+  height: 7px;
 }
 @media (max-width: 960px) {
   nav img {
@@ -133,9 +135,16 @@ nav img {
     height: 50px;
     padding: 0;
   }
-  .hero {
-    height: calc(100% - 50px);
-    gap: 18px;
-    padding: 0 30px;
+  .hero > :nth-child(1) {
+    font-size: 30px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 16px;
+  }
+  .main .main-btn-mail {
+    flex-direction: column;
   }
 }
