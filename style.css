@@ -126,7 +126,6 @@ nav img {
   justify-content: space-between;
   width: 100%;
   height: 80%;
-  gap: 2%;
   overflow: hidden;
 }
 .hero-2-left {
@@ -136,8 +135,8 @@ nav img {
   align-items: flex-start;
   color: #e5e5e5;
   justify-content: center;
-  padding: 7%;
-  width: 50%;
+  padding: 5%;
+  width: 45%;
 }
 .hero-2-left > :nth-child(1) {
   font-weight: 900;
@@ -151,8 +150,9 @@ nav img {
 }
 .hero-2-right {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   overflow: hidden;
+  padding: 2%;
 }
 .hero-2-right img {
   position: relative;
@@ -167,7 +167,114 @@ nav img {
   height: 70%;
   width: 34%;
   top: 98%;
-  left: 66%;
+  left: 64%;
+}
+.main-3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  gap: 2%;
+  overflow: hidden;
+}
+.main-3-left {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-3-left img {
+  height: 70%;
+  align-items: center;
+}
+.mobile-download {
+  font-family: "Martel Sans", sans-serif;
+  border: 2px solid gray;
+  background-color: black;
+  border-radius: 15px;
+  height: 17%;
+  width: 22%;
+  display: flex;
+  position: absolute;
+  top: 230%;
+}
+.mobile-download-img {
+  padding: 5%;
+}
+.mobile-download-txt > :nth-child(1) {
+  color: #e5e5e5;
+  font-size: 26px;
+}
+.mobile-download-txt > :nth-child(2) {
+  color: #5335e9;
+  font-size: 14px;
+  font-weight: 500;
+}
+.main-3-right {
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #e5e5e5;
+  justify-content: center;
+  padding: 7%;
+  width: 45%;
+}
+.main-3-right > :nth-child(1) {
+  font-weight: 900;
+  font-size: 52px;
+  text-align: left;
+}
+.main-3-right > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+}
+.main-4 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  gap: 2%;
+  overflow: hidden;
+}
+.hero-4-left {
+  font-family: "Martel Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #e5e5e5;
+  justify-content: center;
+  padding: 7%;
+  width: 50%;
+}
+.hero-4-left > :nth-child(1) {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: left;
+}
+.hero-4-left > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: left;
+}
+.hero-4-right {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-4-right img {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-4-right video {
+  z-index: -1;
+  overflow: hidden;
+  height: 28%;
+  position: absolute;
+  top: 272%;
 }
 @media (max-width: 960px) {
   nav img {
